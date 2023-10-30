@@ -1,5 +1,7 @@
 class TreeStore {
+    //ключом для каждого объекта является значение id, которое может быть как числом, так и строкой.
     private itemsMap: Map<number | string, any>;
+    // для отображения связи между родительскими элементами (по id) и их дочерними элементами.
     private parentToChildrenMap: Map<number | string, any[]>;
 
     constructor(items: any[]) {
